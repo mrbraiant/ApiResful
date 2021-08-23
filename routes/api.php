@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +30,6 @@ Route::prefix('v1')->group(function(){
     //Route::resource('products', 'App\Http\Controllers\ProductController');
     Route::resources([
             'products' => 'App\Http\Controllers\ProductController',
-                'users' => 'App\Http\Controllers\UserController',
-            ]);
+            'users' => 'App\Http\Controllers\UserController',
+    ]);
 });
